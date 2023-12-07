@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class carMovement : MonoBehaviour {
     private float MotoForce_3 = 1500.0f;  // мощность вращения передних колес
@@ -15,6 +16,10 @@ public class carMovement : MonoBehaviour {
     public Transform TWR_3;
 
     void Update() {
+
+    if (Input.GetKey(KeyCode.Escape)) {
+        SceneManager.LoadScene("Menu 1");
+    }
         float v = Input.GetAxis("Vertical") * MotoForce_3; // ускорение колес
         float h = Input.GetAxis("Horizontal") * SteerForce_3; // угол поворотaw передних колес
 

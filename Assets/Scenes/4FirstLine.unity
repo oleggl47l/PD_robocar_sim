@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!146 &36770795 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 2223444532088229477, guid: 4728a6cdb149cf647b4f28a3971a087a, type: 3}
+  m_PrefabInstance: {fileID: 1898233173}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &65370402
 GameObject:
   m_ObjectHideFlags: 0
@@ -439,6 +444,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &505992152 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8141100978561792434, guid: 4728a6cdb149cf647b4f28a3971a087a, type: 3}
+  m_PrefabInstance: {fileID: 1898233173}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1016337058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1445,6 +1455,14 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 500
       objectReference: {fileID: 0}
+    - target: {fileID: 8422976594166975843, guid: 4728a6cdb149cf647b4f28a3971a087a, type: 3}
+      propertyPath: CWR_3
+      value: 
+      objectReference: {fileID: 36770795}
+    - target: {fileID: 8422976594166975843, guid: 4728a6cdb149cf647b4f28a3971a087a, type: 3}
+      propertyPath: TWR_3
+      value: 
+      objectReference: {fileID: 505992152}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

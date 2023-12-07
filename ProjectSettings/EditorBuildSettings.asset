@@ -6,12 +6,24 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 66400e409c224744aab92004d8f2b31c
+    path: Assets/Scenes/Menu 1.unity
+    guid: 3ebd9d9762a25bd4fa022fb0d4146a64
   - enabled: 1
-    path: Assets/Scenes/6Competiton.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/1FirstMove.unity
+    guid: 83c400792d8066b4ab2b6ecda889cb2d
+  - enabled: 1
+    path: Assets/Scenes/2SecondMove.unity
+    guid: d4c806b0ff2a74d4cb64be5835bcca6b
   - enabled: 1
     path: Assets/Scenes/3Competition.unity
     guid: 46ad9cc318d67dd49b58d85765fd7587
+  - enabled: 1
+    path: Assets/Scenes/4FirstLine.unity
+    guid: 73ef0144ba5b36146a75dff45dda921a
+  - enabled: 1
+    path: Assets/Scenes/5SecondLine.unity
+    guid: 6e755720d190db54aa7cfbc8e9e2c162
+  - enabled: 1
+    path: Assets/Scenes/6Competiton.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
