@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class carMovement : MonoBehaviour {
-    private float MotoForce_3 = 1500.0f;  // мощность вращения передних колес
+    private float MotoForce_3 = 4000.0f;  // мощность вращения передних колес
     private float SteerForce_3 = 60.0f; // угол поворота передних колес
 
     public WheelCollider CWFR_3;
@@ -16,8 +16,8 @@ public class carMovement : MonoBehaviour {
         float v = Input.GetAxis("Vertical") * MotoForce_3; // ускорение колес
         float h = Input.GetAxis("Horizontal") * SteerForce_3; // угол поворотaw передних колес
 
-        TWFR_3.Rotate(CWFR_3.rpm / 60 * 360 * Time.deltaTime, 0.0f, 0.0f);
-        TWFL_3.Rotate(CWFL_3.rpm / 60 * 360 * Time.deltaTime, 0.0f, 0.0f);
+        TWFR_3.Rotate((CWFR_3.rpm*3) / 60 * 360 * Time.deltaTime, 0.0f, 0.0f);
+        TWFL_3.Rotate((CWFL_3.rpm*3) / 60 * 360 * Time.deltaTime, 0.0f, 0.0f);
 
 
         if (Input.GetKey(KeyCode.Space)) {
