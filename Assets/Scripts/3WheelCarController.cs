@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class carMovement : MonoBehaviour {
-    private float MotoForce_3 = 8000f;  // мощность вращения передних колес
+    private float MotoForce_3 = 6000f;  // мощность вращения передних колес
 
     public WheelCollider CWFR_3;
     public WheelCollider CWFL_3;
