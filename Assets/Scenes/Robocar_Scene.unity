@@ -178,7 +178,7 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 1
     m_AsymptoteValue: 1
-    m_Stiffness: 9.8
+    m_Stiffness: 5
   m_SidewaysFriction:
     m_ExtremumSlip: 1
     m_ExtremumValue: 1
@@ -657,7 +657,7 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 1
     m_AsymptoteValue: 1
-    m_Stiffness: 10
+    m_Stiffness: 5
   m_SidewaysFriction:
     m_ExtremumSlip: 1
     m_ExtremumValue: 1
