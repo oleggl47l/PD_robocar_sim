@@ -178,7 +178,7 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 1
     m_AsymptoteValue: 1
-    m_Stiffness: 1
+    m_Stiffness: 9.8
   m_SidewaysFriction:
     m_ExtremumSlip: 1
     m_ExtremumValue: 1
@@ -657,7 +657,7 @@ WheelCollider:
     m_ExtremumValue: 1
     m_AsymptoteSlip: 1
     m_AsymptoteValue: 1
-    m_Stiffness: 1
+    m_Stiffness: 10
   m_SidewaysFriction:
     m_ExtremumSlip: 1
     m_ExtremumValue: 1
@@ -1334,8 +1334,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.77262115, y: 0.8794941, z: 0.7099037}
-  m_Center: {x: -0.024684906, y: 0.81407624, z: -2.7608042}
+  m_Size: {x: 0.77262115, y: 0.8794941, z: 0.6908808}
+  m_Center: {x: -0.024684906, y: 0.81407624, z: -2.7512927}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
