@@ -83,7 +83,7 @@ public class carMovement : MonoBehaviour {
     {
         float lf = 2000f;
         float rf = 2000f;
-        int t = 3;
+        int t = 10;
         if (isMoving || Input.anyKeyDown)
         {
             Movement(lf, rf, t);
