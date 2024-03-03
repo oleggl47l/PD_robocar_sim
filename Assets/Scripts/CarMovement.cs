@@ -53,10 +53,8 @@ public class CarMovement : MonoBehaviour {
             d = true;
             starttime = Time.unscaledTime;
         }
-        Debug.Log(Time.unscaledTime);
         if (Time.unscaledTime - starttime <= timedelta / 1.5 && w == true)
         {
-            Debug.Log(Time.time - starttime);
             CWFR_3.motorTorque = v2;
             CWFL_3.motorTorque = v1;
         }
@@ -77,7 +75,6 @@ public class CarMovement : MonoBehaviour {
         } // -> stopping
         else if (Time.unscaledTime - starttime <= timedelta && w == true)
         {
-            Debug.Log("sosiska");
             CWFR_3.motorTorque = -v2;
             CWFL_3.motorTorque = -v1;
         }
@@ -98,7 +95,6 @@ public class CarMovement : MonoBehaviour {
         }
         else
         {
-            Debug.Log("sosi");
             w = false;
             s = false;
             a = false;
