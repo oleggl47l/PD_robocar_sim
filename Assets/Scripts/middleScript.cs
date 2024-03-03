@@ -16,9 +16,7 @@ public class middleScript : MonoBehaviour
         float lf = 2000f;
         float rf = 2000f;
         int t = 2;
-        if (carMovementScript.isMoving || Input.anyKeyDown) {
-            carMovementScript.Movement(lf, rf, t);
-        }
+        carMovementScript.Movement(lf, rf, t);
     }
     
 }

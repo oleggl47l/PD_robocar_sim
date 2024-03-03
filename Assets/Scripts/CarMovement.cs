@@ -2,7 +2,6 @@
 using UnityEngine;
 
 public class CarMovement : MonoBehaviour {
-    public bool isMoving = false;
     public bool w = false;
     public bool s = false;
     public bool a = false;
@@ -22,45 +21,84 @@ public class CarMovement : MonoBehaviour {
         TWFR_3.Rotate((CWFR_3.rpm * 3) / 60 * 360 * Time.deltaTime, 0.0f, 0.0f);
         TWFL_3.Rotate((CWFL_3.rpm * 3) / 60 * 360 * Time.deltaTime, 0.0f, 0.0f);
 
-        if (Input.GetKeyDown(KeyCode.W)) {
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            s = false;
+            a = false;
+            d = false;
             w = true;
-            isMoving = true;
-            starttime = Time.time;
+            starttime = Time.unscaledTime;
         }
-        else if (Input.GetKeyDown(KeyCode.S)) {
+        else if (Input.GetKeyDown(KeyCode.S))
+        {
+            w = false;
+            a = false;
+            d = false;
             s = true;
-            isMoving = true;
-            starttime = Time.time;
+            starttime = Time.unscaledTime;
         }
-        else if (Input.GetKeyDown(KeyCode.A)) {
+        else if (Input.GetKeyDown(KeyCode.A))
+        {
+            w = false;
+            s = false;
+            d = false;
             a = true;
-            isMoving = true;
-            starttime = Time.time;
+            starttime = Time.unscaledTime;
         }
-        else if (Input.GetKeyDown(KeyCode.D)) {
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            w = false;
+            s = false;
+            a = false;
             d = true;
-            isMoving = true;
-            starttime = Time.time;
+            starttime = Time.unscaledTime;
         }
-
-        if (isMoving && Time.time - starttime <= timedelta && w == true) {
+        Debug.Log(Time.unscaledTime);
+        if (Time.unscaledTime - starttime <= timedelta / 1.5 && w == true)
+        {
+            Debug.Log(Time.time - starttime);
             CWFR_3.motorTorque = v2;
             CWFL_3.motorTorque = v1;
         }
-        else if (isMoving && Time.time - starttime <= timedelta && s == true) {
+        else if (Time.unscaledTime - starttime <= timedelta / 1.5&& s == true)
+        {
             CWFR_3.motorTorque = -v2;
             CWFL_3.motorTorque = -v1;
         }
-        else if (isMoving && Time.time - starttime <= timedelta && a == true) {
-            CWFR_3.motorTorque = 0f;
+        else if (Time.unscaledTime - starttime <= timedelta / 1.1 && a == true)
+        {
+            CWFR_3.motorTorque = -v2;
             CWFL_3.motorTorque = v1;
         }
-        else if (isMoving && Time.time - starttime <= timedelta && d == true) {
+        else if (Time.unscaledTime - starttime <= timedelta / 1.1 && d == true)
+        {
             CWFR_3.motorTorque = v2;
-            CWFL_3.motorTorque = 0f;
+            CWFL_3.motorTorque = -v1;
+        } // -> stopping
+        else if (Time.unscaledTime - starttime <= timedelta && w == true)
+        {
+            Debug.Log("sosiska");
+            CWFR_3.motorTorque = -v2;
+            CWFL_3.motorTorque = -v1;
         }
-        else {
-            isMoving = false;
+        else if (Time.unscaledTime - starttime <= timedelta && s == true)
+        {
+            CWFR_3.motorTorque = v2;
+            CWFL_3.motorTorque = v1;
+        }
+        else if (Time.unscaledTime - starttime <= timedelta && a == true)
+        {
+            CWFR_3.motorTorque = v2;
+            CWFL_3.motorTorque = -v1;
+        }
+        else if (Time.unscaledTime - starttime <= timedelta && d == true)
+        {
+            CWFR_3.motorTorque = -v2;
+            CWFL_3.motorTorque = v1;
+        }
+        else
+        {
+            Debug.Log("sosi");
             w = false;
             s = false;
             a = false;
