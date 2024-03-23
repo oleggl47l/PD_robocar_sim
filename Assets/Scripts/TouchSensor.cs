@@ -18,12 +18,13 @@ public class TouchSensor : MonoBehaviour
     void OnCollisionEnter(Collision collision)
     {
         // print(collision.gameObject.name);
-        print(1);
+        Debug.Log("Касание: " + 1);
+
     }
 
     void OnCollisionExit(Collision collision)
     {
-        print(0);
+        Debug.Log("Касание: " + 0);
     }
 
 
