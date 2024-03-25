@@ -30,7 +30,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6490489275047433303}
-  - {fileID: 6253719089329666349}
+  - {fileID: 3380893713199482808}
   m_Father: {fileID: 7911523165387309574}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -547,7 +547,7 @@ MonoBehaviour:
   m_ConnectionInputViewType: 0
   m_BgImage: {fileID: 6567529739273195993}
   m_ImageMeshOffset: {x: -8, y: 0}
---- !u!1 &4720465022936390470
+--- !u!1 &5136714770666723958
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -555,9 +555,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6253719089329666349}
-  - component: {fileID: 2228666428346496383}
-  - component: {fileID: 2008451219799915129}
+  - component: {fileID: 3380893713199482808}
+  - component: {fileID: 6046510225836695842}
+  - component: {fileID: 5303932428840690301}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -565,13 +565,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &6253719089329666349
+--- !u!224 &3380893713199482808
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4720465022936390470}
+  m_GameObject: {fileID: 5136714770666723958}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -584,21 +584,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 1, y: 0.5}
---- !u!222 &2228666428346496383
+--- !u!222 &6046510225836695842
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4720465022936390470}
+  m_GameObject: {fileID: 5136714770666723958}
   m_CullTransparentMesh: 1
---- !u!114 &2008451219799915129
+--- !u!114 &5303932428840690301
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4720465022936390470}
+  m_GameObject: {fileID: 5136714770666723958}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
