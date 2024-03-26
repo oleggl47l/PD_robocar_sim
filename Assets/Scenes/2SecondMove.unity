@@ -233,18 +233,12 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6231370391086232013, guid: 4728a6cdb149cf647b4f28a3971a087a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1354494458}
     - targetCorrespondingSourceObject: {fileID: 2690707111392763727, guid: 4728a6cdb149cf647b4f28a3971a087a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1009712471}
     - targetCorrespondingSourceObject: {fileID: 9178361401630037517, guid: 4728a6cdb149cf647b4f28a3971a087a, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1068885934}
-    - targetCorrespondingSourceObject: {fileID: 9178361401630037517, guid: 4728a6cdb149cf647b4f28a3971a087a, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1068885936}
   m_SourcePrefab: {fileID: 100100000, guid: 4728a6cdb149cf647b4f28a3971a087a, type: 3}
 --- !u!54 &142992582 stripped
 Rigidbody:
@@ -980,18 +974,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   robotBody: {fileID: 142992582}
---- !u!114 &1068885936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1068885932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 60620667ffefb344c8fb6e3ab2be6103, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1177502640
 GameObject:
   m_ObjectHideFlags: 0
@@ -1203,24 +1185,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1354494456 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6231370391086232013, guid: 4728a6cdb149cf647b4f28a3971a087a, type: 3}
-  m_PrefabInstance: {fileID: 58724075}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1354494458
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1354494456}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b546337ee423e914c81b839d0b3ab112, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  robotBody: {fileID: 142992582}
 --- !u!1 &1470774379
 GameObject:
   m_ObjectHideFlags: 0

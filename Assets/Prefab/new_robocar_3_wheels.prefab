@@ -924,8 +924,9 @@ GameObject:
   - component: {fileID: 8230362733458015526}
   - component: {fileID: 1173109676115469216}
   - component: {fileID: 8122548827582832528}
+  - component: {fileID: 6740958100390527551}
   m_Layer: 0
-  m_Name: TestCube
+  m_Name: TouchSensorTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1044,6 +1045,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &6740958100390527551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6231370391086232013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b546337ee423e914c81b839d0b3ab112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  robotBody: {fileID: 6916435358993334579}
 --- !u!1 &8173788246374916566
 GameObject:
   m_ObjectHideFlags: 0
